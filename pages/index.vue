@@ -1,7 +1,7 @@
 <script setup>
 const { data } = await useSheet(
-  "1dh-71mDVPeiB7mvQn-EUal-4p1swJHE3d5FqwoPVwTQ",
-  "Sheet1"
+  "1rq0SknbfsfC3fcxt_vMMX_-KQX8hNmAGF98OB7r3PSU",
+  "värvidkokku"
 );
 </script>
 
