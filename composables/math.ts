@@ -1,12 +1,11 @@
-import { arc as arcPath } from "d3";
-
 export function deg2rad(deg: number = 0): number {
   return (deg * Math.PI) / 180;
 }
 export function rad2deg(rad: number = 0): number {
   return (rad * 180) / Math.PI;
 }
-export function polar(
+
+export function pol2car(
   angle: number,
   radius: number,
   radius2: number | null = null
@@ -57,20 +56,3 @@ export const snap = (val, step) => Math.round(val / step) * step;
 export const translate = (x, y) => `translate(${x} ${y})`;
 export const rotate = (deg) => `rotate(${deg})`;
 export const scale = (s1, s2) => `scale(${s1} ${s2})`;
-
-export const arc = (
-  start,
-  stop,
-  inner = 0,
-  outer = 100,
-  corner = 0,
-  padding = 0
-) =>
-  arcPath()
-    .padAngle(0)
-    .startAngle(deg2rad(start))
-    .endAngle(deg2rad(stop))
-    .innerRadius(inner)
-    .outerRadius(outer)
-    .cornerRadius(corner)
-    .padAngle(deg2rad(padding))();

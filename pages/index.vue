@@ -1,5 +1,5 @@
 <script setup>
-const { data } = useSheet(
+const { data } = await useSheet(
   "1dh-71mDVPeiB7mvQn-EUal-4p1swJHE3d5FqwoPVwTQ",
   "Sheet1"
 );
