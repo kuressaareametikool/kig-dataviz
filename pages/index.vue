@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script setup>
 const { data } = await useSheet(
   "1rq0SknbfsfC3fcxt_vMMX_-KQX8hNmAGF98OB7r3PSU",
@@ -20,4 +21,8 @@ const { data } = await useSheet(
       {{ data[row][0].slice(0, 10) }}
     </p>
   </div>
+=======
+<template>
+  <pre>Esileht</pre>
+>>>>>>> 5dd40d7b2d0aaac0c591618fab14f80e75cdbb35
 </template>
