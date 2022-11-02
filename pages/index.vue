@@ -6,18 +6,20 @@ const { data } = await useSheet(
 </script>
 
 <template>
-  <div v-for="col in range(1, 8)" class="pt-12">
-    {{ data[0][col] }}
+  <div v-for="day in range(2 - 1, 9 - 1)" style="margin-top: 20px">
+    {{ data[0][day] }}
     <p
-      v-for="row in range(1, 12)"
+      v-for="color in range(2 - 1, 13 - 1)"
       :style="{
-        width: data[row][col] * 50 + 'px',
-        background: data[row][0],
+        width: data[color][day] * 50 + 'px',
+        height: '20px',
+        background: data[color][0],
         color: 'darkgray',
-        padding: '5px 10px',
+        padding: '5px 10px 5px 10px',
+        borderRadius: '1000000px',
+        marginBottom: '5px',
+        opacity: data[color][day],
       }"
-    >
-      {{ data[row][0].slice(0, 10) }}
-    </p>
+    ></p>
   </div>
 </template>
