@@ -19,10 +19,14 @@ const rows = [
       <g v-for="(cols, row) in data">
         <circle
           v-for="(value, col) in cols"
-          :style="{ opacity: 0.2 + parseInt(value) / 15, fill: 'red' }"
+          :style="{
+            opacity: 0.2 + parseInt(value) / 15,
+            stroke: 'red',
+            fill: 'none',
+          }"
           :cx="col * 50 + 100"
           :cy="row * 50 + 100"
-          :r="parseInt(value) * 10"
+          :r="area2radius(parseInt(value)) * 30"
         />
         <circle
           v-for="(value, col) in cols"
