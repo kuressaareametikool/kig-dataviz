@@ -6,7 +6,7 @@ const { data } = await useSheet(
 </script>
 
 <template>
-  <div v-for="day in range(2 - 1, 9 - 1)" style="margin-top: 20px">
+  <div v-for= "day in range(2 - 1, 9 - 1)" style="margin-top: 20px">
     {{ data[0][day] }}
     <p
       v-for="color in range(2 - 1, 13 - 1)"
@@ -15,8 +15,8 @@ const { data } = await useSheet(
         height: '20px',
         background: data[color][0],
         color: 'darkgray',
-        padding: '5px 10px 5px 10px',
-        borderRadius: '1000000px',
+        padding: '5px 10px',
+        borderRadius: '100000px',
         marginBottom: '5px',
         opacity: data[color][day],
       }"
