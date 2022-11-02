@@ -1,7 +1,7 @@
 <script setup>
 // i          0  1  2  3  4  5  6
 //            E  T  K  N  R  L  P
-const data = [5, 3, 2, 3, 1, 3, 5];
+const data = [1, 2, 3, 1, 2, 0, 1];
 </script>
 
 <template>
