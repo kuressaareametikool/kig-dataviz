@@ -18,4 +18,4 @@ export const useSheet = (
     transform,
     key: id,
   });
-};
+}
