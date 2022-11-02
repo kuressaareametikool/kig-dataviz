@@ -6,7 +6,7 @@ const data = [1, 2, 5, 1, 1, 3, 1];
 
 <template>
   <div>
-    <pre v-for="d in data" :style="{opacity: 0.1 + d / 3 }">{{ d }}</pre>
+    <pre v-for="(d, i) in data" :style="{ opacity: 0.1 + d / 3 }">{{ d }}</pre>
     <svg width="500" height="500" class="bg-gray-100">
         <circle
         v-for="(d, i) in data"
