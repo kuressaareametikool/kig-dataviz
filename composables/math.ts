@@ -56,3 +56,5 @@ export const snap = (val, step) => Math.round(val / step) * step;
 export const translate = (x, y) => `translate(${x} ${y})`;
 export const rotate = (deg) => `rotate(${deg})`;
 export const scale = (s1, s2) => `scale(${s1} ${s2})`;
+
+export const area2radius = (area) => Math.sqrt(area / Math.PI);
