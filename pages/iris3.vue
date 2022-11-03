@@ -16,9 +16,31 @@ const { data: elina } = await useSheet(
   "elina"
 );
 
+const { data: terje } = await useSheet(
+  "1rq0SknbfsfC3fcxt_vMMX_-KQX8hNmAGF98OB7r3PSU",
+  "terje"
+);
+
+const { data: ulvi } = await useSheet(
+  "1rq0SknbfsfC3fcxt_vMMX_-KQX8hNmAGF98OB7r3PSU",
+  "ulvi"
+);
+
+const { data: sille } = await useSheet(
+  "1rq0SknbfsfC3fcxt_vMMX_-KQX8hNmAGF98OB7r3PSU",
+  "sille"
+);
+
 const nudge = 10;
 
-const datas = computed(() => [iris.value, inna.value, elina.value]);
+const datas = computed(() => [
+  iris.value,
+  inna.value,
+  elina.value,
+  terje.value,
+  ulvi.value,
+  sille.value,
+]);
 </script>
 
 <template>
