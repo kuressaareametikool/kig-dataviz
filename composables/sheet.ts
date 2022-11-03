@@ -16,6 +16,6 @@ export const useSheet = (
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${id}/values/${sheetName}?alt=json&key=${key}&majorDimension=ROWS`;
   return useFetch(url, {
     transform,
-    key: id,
+    key: url,
   });
-}
+};

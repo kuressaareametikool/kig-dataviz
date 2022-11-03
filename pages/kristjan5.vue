@@ -3,6 +3,10 @@ const { data } = await useSheet(
   "1dh-71mDVPeiB7mvQn-EUal-4p1swJHE3d5FqwoPVwTQ",
   "vihastamine"
 );
+const { data: data2 } = await useSheet(
+  "1dh-71mDVPeiB7mvQn-EUal-4p1swJHE3d5FqwoPVwTQ",
+  "roomustamine"
+);
 </script>
 
 <template>
@@ -13,20 +17,27 @@ const { data } = await useSheet(
         <g v-for="(value, col) in cols">
           <circle
             :style="{
-              opacity: 0.7,
+              opacity: 0.8,
               stroke: 'red',
               fill: 'none',
             }"
             :cx="col * 50 + 100"
             :cy="row * 50 + 100"
-            :r="area2radius(parseInt(value)) * 25"
+            :r="area2radius(parseInt(value)) * 15"
           />
+        </g>
+      </g>
+      <g v-for="(cols, row) in data2">
+        <g v-for="(value, col) in cols">
           <circle
+            :style="{
+              opacity: 0.8,
+              stroke: 'green',
+              fill: 'none',
+            }"
             :cx="col * 50 + 100"
             :cy="row * 50 + 100"
-            r="1"
-            fill="fill"
-            opacity="0.3"
+            :r="area2radius(parseInt(value)) * 15"
           />
         </g>
       </g>
