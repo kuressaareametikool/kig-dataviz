@@ -58,3 +58,11 @@ export const rotate = (deg) => `rotate(${deg})`;
 export const scale = (s1, s2) => `scale(${s1} ${s2})`;
 
 export const area2radius = (area) => Math.sqrt(area / Math.PI);
+
+export const random = (min: number = 0, max: number = 1) => {
+  return min + Math.random() * (max - min);
+};
+
+export const randomint = (min: number, max: number) => {
+  return Math.floor(random(min, max));
+};
