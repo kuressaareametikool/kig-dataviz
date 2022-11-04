@@ -6,7 +6,10 @@ export default {
 
 <script setup lang="ts">
 const svgRef = ref(null);
-const download = useSvgDownload(svgRef, "dataviz");
+let download = () => {};
+onMounted(() => {
+  download = useSvgDownload(svgRef, "dataviz");
+});
 </script>
 
 <template>

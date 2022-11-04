@@ -45,7 +45,7 @@ const datas = computed(() => [
 
 <template>
   <div>
-    <svg width="500" height="750" xmlns="http://www.w3.org/2000/svg">
+    <svg-download width="500" height="750" xmlns="http://www.w3.org/2000/svg">
       <rect width="500" height="750" fill="#eee" />
 
       <g v-for="(d, y) in datas" :transform="translate(0, y * 85)">
@@ -76,6 +76,6 @@ const datas = computed(() => [
       <text x="200" y="680" opacity="0.4" fontFamily="sans-serif">
         E T K N R L P
       </text>
-    </svg>
+    </svg-download>
   </div>
 </template>
