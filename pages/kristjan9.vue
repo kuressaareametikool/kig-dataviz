@@ -48,7 +48,7 @@ const datas = computed(() => [
     <svg width="500" height="750" xmlns="http://www.w3.org/2000/svg">
       <rect width="500" height="750" fill="#eee" />
 
-      <g v-for="(d, y) in datas" :transform="translate(0, y * 100)">
+      <g v-for="(d, y) in datas" :transform="translate(0, y * 85)">
         <g v-for="(cols, row) in d">
           <g v-for="(value, col) in cols">
             <g
@@ -60,7 +60,7 @@ const datas = computed(() => [
                   opacity: 0.9,
                   fill: cols[7] === 'mixed' ? 'none' : cols[7],
                   stroke: cols[7] === 'mixed' ? 'black' : 'none',
-                  strokeWidth: cols[7] === 'mixed' ? 3 : 0,
+                  strokeWidth: cols[7] === 'mixed' ? 2 : 0,
                   strokeDasharray: '2 2',
                 }"
                 :width="cols[7] === 'mixed' ? 1 : 4"
@@ -73,9 +73,9 @@ const datas = computed(() => [
         </g>
       </g>
 
-      <!-- <text x="200" y="680" opacity="0.4" fontFamily="sans-serif">
+      <text x="200" y="680" opacity="0.4" fontFamily="sans-serif">
         E T K N R L P
-      </text> -->
+      </text>
     </svg>
   </div>
 </template>
